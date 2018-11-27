@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000610 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000600 /* Foundation.framework */; };
+		000000000620 /* AEAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000C0 /* AEAD.swift */; };
+		000000000630 /* AEADChaCha20Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000D0 /* AEADChaCha20Poly1305.swift */; };
+		000000000640 /* AES.Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000E0 /* AES.Cryptors.swift */; };
+		000000000650 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000F0 /* AES.swift */; };
+		000000000660 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000100 /* Array+Extension.swift */; };
+		000000000670 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000110 /* Authenticator.swift */; };
+		000000000680 /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000120 /* BatchedCollection.swift */; };
+		000000000690 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000130 /* Bit.swift */; };
+		0000000006A0 /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000140 /* BlockCipher.swift */; };
+		0000000006B0 /* BlockDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000150 /* BlockDecryptor.swift */; };
+		0000000006C0 /* BlockEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000160 /* BlockEncryptor.swift */; };
+		0000000006D0 /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000170 /* BlockMode.swift */; };
+		0000000006E0 /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000180 /* BlockModeOptions.swift */; };
+		0000000006F0 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000190 /* CBC.swift */; };
+		000000000700 /* CCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001A0 /* CCM.swift */; };
+		000000000710 /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001B0 /* CFB.swift */; };
+		000000000720 /* CipherModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001C0 /* CipherModeWorker.swift */; };
+		000000000730 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001D0 /* CTR.swift */; };
+		000000000740 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001E0 /* ECB.swift */; };
+		000000000750 /* GCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001F0 /* GCM.swift */; };
+		000000000760 /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000200 /* OFB.swift */; };
+		000000000770 /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000210 /* PCBC.swift */; };
+		000000000780 /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000220 /* Blowfish.swift */; };
+		000000000790 /* CBCMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000230 /* CBCMAC.swift */; };
+		0000000007A0 /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000240 /* ChaCha20.swift */; };
+		0000000007B0 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000250 /* Checksum.swift */; };
+		0000000007C0 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000260 /* Cipher.swift */; };
+		0000000007D0 /* CMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000270 /* CMAC.swift */; };
+		0000000007E0 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000280 /* Collection+Extension.swift */; };
+		0000000007F0 /* CompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000290 /* CompactMap.swift */; };
+		000000000800 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002A0 /* Cryptor.swift */; };
+		000000000810 /* Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002B0 /* Cryptors.swift */; };
+		000000000820 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002C0 /* Digest.swift */; };
+		000000000830 /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002D0 /* DigestType.swift */; };
+		000000000840 /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002E0 /* AES+Foundation.swift */; };
+		000000000850 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002F0 /* Array+Foundation.swift */; };
+		000000000860 /* Blowfish+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000300 /* Blowfish+Foundation.swift */; };
+		000000000870 /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000310 /* ChaCha20+Foundation.swift */; };
+		000000000880 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000320 /* Data+Extension.swift */; };
+		000000000890 /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000330 /* HMAC+Foundation.swift */; };
+		0000000008A0 /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000340 /* Rabbit+Foundation.swift */; };
+		0000000008B0 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000350 /* String+FoundationExtension.swift */; };
+		0000000008C0 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000360 /* Utils+Foundation.swift */; };
+		0000000008D0 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000370 /* Generics.swift */; };
+		0000000008E0 /* HKDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000380 /* HKDF.swift */; };
+		0000000008F0 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000390 /* HMAC.swift */; };
+		000000000900 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003A0 /* Int+Extension.swift */; };
+		000000000910 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003B0 /* MD5.swift */; };
+		000000000920 /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003C0 /* NoPadding.swift */; };
+		000000000930 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003D0 /* Operators.swift */; };
+		000000000940 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003E0 /* Padding.swift */; };
+		000000000950 /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003F0 /* PBKDF1.swift */; };
+		000000000960 /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000400 /* PBKDF2.swift */; };
+		000000000970 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000410 /* PKCS5.swift */; };
+		000000000980 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000420 /* PKCS7.swift */; };
+		000000000990 /* PKCS7Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000430 /* PKCS7Padding.swift */; };
+		0000000009A0 /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000440 /* Poly1305.swift */; };
+		0000000009B0 /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000450 /* Rabbit.swift */; };
+		0000000009C0 /* RandomBytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000460 /* RandomBytesSequence.swift */; };
+		0000000009D0 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000470 /* SecureBytes.swift */; };
+		0000000009E0 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000480 /* SHA1.swift */; };
+		0000000009F0 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000490 /* SHA2.swift */; };
+		000000000A00 /* SHA3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004A0 /* SHA3.swift */; };
+		000000000A10 /* StreamDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004B0 /* StreamDecryptor.swift */; };
+		000000000A20 /* StreamEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004C0 /* StreamEncryptor.swift */; };
+		000000000A30 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004D0 /* String+Extension.swift */; };
+		000000000A40 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004E0 /* UInt128.swift */; };
+		000000000A50 /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004F0 /* UInt16+Extension.swift */; };
+		000000000A60 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000500 /* UInt32+Extension.swift */; };
+		000000000A70 /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000510 /* UInt64+Extension.swift */; };
+		000000000A80 /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000520 /* UInt8+Extension.swift */; };
+		000000000A90 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000530 /* Updatable.swift */; };
+		000000000AA0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000540 /* Utils.swift */; };
+		000000000AB0 /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000550 /* ZeroPadding.swift */; };
+		000000000B00 /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000AF0 /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000B40 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B30 /* CryptoSwift-dummy.m */; };
+		000000000BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000600 /* Foundation.framework */; };
+		000000000C50 /* Pods-JDEther-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000C40 /* Pods-JDEther-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000CB0 /* Pods-JDEther-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000CA0 /* Pods-JDEther-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000560;
+			remoteInfo = CryptoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0000000000B0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0000000000C0 /* AEAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEAD.swift; path = Sources/CryptoSwift/AEAD/AEAD.swift; sourceTree = "<group>"; };
+		0000000000D0 /* AEADChaCha20Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEADChaCha20Poly1305.swift; path = Sources/CryptoSwift/AEAD/AEADChaCha20Poly1305.swift; sourceTree = "<group>"; };
+		0000000000E0 /* AES.Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.Cryptors.swift; path = Sources/CryptoSwift/AES.Cryptors.swift; sourceTree = "<group>"; };
+		0000000000F0 /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
+		000000000100 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
+		000000000110 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
+		000000000120 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
+		000000000130 /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
+		000000000140 /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
+		000000000150 /* BlockDecryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockDecryptor.swift; path = Sources/CryptoSwift/BlockDecryptor.swift; sourceTree = "<group>"; };
+		000000000160 /* BlockEncryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockEncryptor.swift; path = Sources/CryptoSwift/BlockEncryptor.swift; sourceTree = "<group>"; };
+		000000000170 /* BlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockMode.swift; path = Sources/CryptoSwift/BlockMode/BlockMode.swift; sourceTree = "<group>"; };
+		000000000180 /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
+		000000000190 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
+		0000000001A0 /* CCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CCM.swift; path = Sources/CryptoSwift/BlockMode/CCM.swift; sourceTree = "<group>"; };
+		0000000001B0 /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
+		0000000001C0 /* CipherModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherModeWorker.swift; path = Sources/CryptoSwift/BlockMode/CipherModeWorker.swift; sourceTree = "<group>"; };
+		0000000001D0 /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTR.swift; path = Sources/CryptoSwift/BlockMode/CTR.swift; sourceTree = "<group>"; };
+		0000000001E0 /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
+		0000000001F0 /* GCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCM.swift; path = Sources/CryptoSwift/BlockMode/GCM.swift; sourceTree = "<group>"; };
+		000000000200 /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
+		000000000210 /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
+		000000000220 /* Blowfish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blowfish.swift; path = Sources/CryptoSwift/Blowfish.swift; sourceTree = "<group>"; };
+		000000000230 /* CBCMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBCMAC.swift; path = Sources/CryptoSwift/CBCMAC.swift; sourceTree = "<group>"; };
+		000000000240 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
+		000000000250 /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
+		000000000260 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
+		000000000270 /* CMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMAC.swift; path = Sources/CryptoSwift/CMAC.swift; sourceTree = "<group>"; };
+		000000000280 /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
+		000000000290 /* CompactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactMap.swift; path = Sources/CryptoSwift/CompactMap.swift; sourceTree = "<group>"; };
+		0000000002A0 /* Cryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptor.swift; path = Sources/CryptoSwift/Cryptor.swift; sourceTree = "<group>"; };
+		0000000002B0 /* Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptors.swift; path = Sources/CryptoSwift/Cryptors.swift; sourceTree = "<group>"; };
+		0000000002C0 /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
+		0000000002D0 /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
+		0000000002E0 /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
+		0000000002F0 /* Array+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Array+Foundation.swift"; sourceTree = "<group>"; };
+		000000000300 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
+		000000000310 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
+		000000000320 /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/CryptoSwift/Foundation/Data+Extension.swift"; sourceTree = "<group>"; };
+		000000000330 /* HMAC+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HMAC+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/HMAC+Foundation.swift"; sourceTree = "<group>"; };
+		000000000340 /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
+		000000000350 /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
+		000000000360 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
+		000000000370 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
+		000000000380 /* HKDF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HKDF.swift; path = Sources/CryptoSwift/HKDF.swift; sourceTree = "<group>"; };
+		000000000390 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
+		0000000003A0 /* Int+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Sources/CryptoSwift/Int+Extension.swift"; sourceTree = "<group>"; };
+		0000000003B0 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
+		0000000003C0 /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
+		0000000003D0 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/CryptoSwift/Operators.swift; sourceTree = "<group>"; };
+		0000000003E0 /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
+		0000000003F0 /* PBKDF1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF1.swift; path = Sources/CryptoSwift/PKCS/PBKDF1.swift; sourceTree = "<group>"; };
+		000000000400 /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
+		000000000410 /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS/PKCS5.swift; sourceTree = "<group>"; };
+		000000000420 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS/PKCS7.swift; sourceTree = "<group>"; };
+		000000000430 /* PKCS7Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7Padding.swift; path = Sources/CryptoSwift/PKCS/PKCS7Padding.swift; sourceTree = "<group>"; };
+		000000000440 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
+		000000000450 /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
+		000000000460 /* RandomBytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomBytesSequence.swift; path = Sources/CryptoSwift/RandomBytesSequence.swift; sourceTree = "<group>"; };
+		000000000470 /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
+		000000000480 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
+		000000000490 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
+		0000000004A0 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
+		0000000004B0 /* StreamDecryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamDecryptor.swift; path = Sources/CryptoSwift/StreamDecryptor.swift; sourceTree = "<group>"; };
+		0000000004C0 /* StreamEncryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamEncryptor.swift; path = Sources/CryptoSwift/StreamEncryptor.swift; sourceTree = "<group>"; };
+		0000000004D0 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
+		0000000004E0 /* UInt128.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt128.swift; path = Sources/CryptoSwift/UInt128.swift; sourceTree = "<group>"; };
+		0000000004F0 /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
+		000000000500 /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
+		000000000510 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
+		000000000520 /* UInt8+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extension.swift"; path = "Sources/CryptoSwift/UInt8+Extension.swift"; sourceTree = "<group>"; };
+		000000000530 /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
+		000000000540 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
+		000000000550 /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
+		0000000005A0 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000600 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		000000000AD0 /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
+		000000000AE0 /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		000000000AF0 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
+		000000000B10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000B20 /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
+		000000000B30 /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
+		000000000B90 /* Pods_JDEther.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDEther.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000C00 /* Pods-JDEther.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JDEther.release.xcconfig"; sourceTree = "<group>"; };
+		000000000C10 /* Pods-JDEther.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JDEther.debug.xcconfig"; sourceTree = "<group>"; };
+		000000000C20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000C30 /* Pods-JDEther.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JDEther.modulemap"; sourceTree = "<group>"; };
+		000000000C40 /* Pods-JDEther-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JDEther-umbrella.h"; sourceTree = "<group>"; };
+		000000000C60 /* Pods-JDEther-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JDEther-frameworks.sh"; sourceTree = "<group>"; };
+		000000000C70 /* Pods-JDEther-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JDEther-resources.sh"; sourceTree = "<group>"; };
+		000000000C80 /* Pods-JDEther-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JDEther-acknowledgements.plist"; sourceTree = "<group>"; };
+		000000000C90 /* Pods-JDEther-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JDEther-acknowledgements.markdown"; sourceTree = "<group>"; };
+		000000000CA0 /* Pods-JDEther-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JDEther-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0000000005D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000610 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000BE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000010 = {
+			isa = PBXGroup;
+			children = (
+				0000000000B0 /* Podfile */,
+				000000000060 /* Frameworks */,
+				000000000080 /* Pods */,
+				000000000020 /* Products */,
+				000000000070 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0000000005A0 /* CryptoSwift.framework */,
+				000000000B90 /* Pods_JDEther.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0000000005F0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000000000070 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000000BF0 /* Pods-JDEther */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		000000000080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000A0 /* CryptoSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0000000000A0 /* CryptoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000C0 /* AEAD.swift */,
+				0000000000D0 /* AEADChaCha20Poly1305.swift */,
+				0000000000F0 /* AES.swift */,
+				0000000002E0 /* AES+Foundation.swift */,
+				0000000000E0 /* AES.Cryptors.swift */,
+				000000000100 /* Array+Extension.swift */,
+				0000000002F0 /* Array+Foundation.swift */,
+				000000000110 /* Authenticator.swift */,
+				000000000120 /* BatchedCollection.swift */,
+				000000000130 /* Bit.swift */,
+				000000000140 /* BlockCipher.swift */,
+				000000000150 /* BlockDecryptor.swift */,
+				000000000160 /* BlockEncryptor.swift */,
+				000000000170 /* BlockMode.swift */,
+				000000000180 /* BlockModeOptions.swift */,
+				000000000220 /* Blowfish.swift */,
+				000000000300 /* Blowfish+Foundation.swift */,
+				000000000190 /* CBC.swift */,
+				000000000230 /* CBCMAC.swift */,
+				0000000001A0 /* CCM.swift */,
+				0000000001B0 /* CFB.swift */,
+				000000000240 /* ChaCha20.swift */,
+				000000000310 /* ChaCha20+Foundation.swift */,
+				000000000250 /* Checksum.swift */,
+				000000000260 /* Cipher.swift */,
+				0000000001C0 /* CipherModeWorker.swift */,
+				000000000270 /* CMAC.swift */,
+				000000000280 /* Collection+Extension.swift */,
+				000000000290 /* CompactMap.swift */,
+				0000000002A0 /* Cryptor.swift */,
+				0000000002B0 /* Cryptors.swift */,
+				0000000001D0 /* CTR.swift */,
+				000000000320 /* Data+Extension.swift */,
+				0000000002C0 /* Digest.swift */,
+				0000000002D0 /* DigestType.swift */,
+				0000000001E0 /* ECB.swift */,
+				0000000001F0 /* GCM.swift */,
+				000000000370 /* Generics.swift */,
+				000000000380 /* HKDF.swift */,
+				000000000390 /* HMAC.swift */,
+				000000000330 /* HMAC+Foundation.swift */,
+				0000000003A0 /* Int+Extension.swift */,
+				0000000003B0 /* MD5.swift */,
+				0000000003C0 /* NoPadding.swift */,
+				000000000200 /* OFB.swift */,
+				0000000003D0 /* Operators.swift */,
+				0000000003E0 /* Padding.swift */,
+				0000000003F0 /* PBKDF1.swift */,
+				000000000400 /* PBKDF2.swift */,
+				000000000210 /* PCBC.swift */,
+				000000000410 /* PKCS5.swift */,
+				000000000420 /* PKCS7.swift */,
+				000000000430 /* PKCS7Padding.swift */,
+				000000000440 /* Poly1305.swift */,
+				000000000450 /* Rabbit.swift */,
+				000000000340 /* Rabbit+Foundation.swift */,
+				000000000460 /* RandomBytesSequence.swift */,
+				000000000470 /* SecureBytes.swift */,
+				000000000480 /* SHA1.swift */,
+				000000000490 /* SHA2.swift */,
+				0000000004A0 /* SHA3.swift */,
+				0000000004B0 /* StreamDecryptor.swift */,
+				0000000004C0 /* StreamEncryptor.swift */,
+				0000000004D0 /* String+Extension.swift */,
+				000000000350 /* String+FoundationExtension.swift */,
+				0000000004E0 /* UInt128.swift */,
+				0000000004F0 /* UInt16+Extension.swift */,
+				000000000500 /* UInt32+Extension.swift */,
+				000000000510 /* UInt64+Extension.swift */,
+				000000000520 /* UInt8+Extension.swift */,
+				000000000530 /* Updatable.swift */,
+				000000000540 /* Utils.swift */,
+				000000000360 /* Utils+Foundation.swift */,
+				000000000550 /* ZeroPadding.swift */,
+				000000000AC0 /* Support Files */,
+			);
+			path = CryptoSwift;
+			sourceTree = "<group>";
+		};
+		0000000005F0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000000600 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		000000000AC0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000000AE0 /* CryptoSwift.modulemap */,
+				000000000AD0 /* CryptoSwift.xcconfig */,
+				000000000B30 /* CryptoSwift-dummy.m */,
+				000000000B20 /* CryptoSwift-prefix.pch */,
+				000000000AF0 /* CryptoSwift-umbrella.h */,
+				000000000B10 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CryptoSwift";
+			sourceTree = "<group>";
+		};
+		000000000BF0 /* Pods-JDEther */ = {
+			isa = PBXGroup;
+			children = (
+				000000000C20 /* Info.plist */,
+				000000000C30 /* Pods-JDEther.modulemap */,
+				000000000C90 /* Pods-JDEther-acknowledgements.markdown */,
+				000000000C80 /* Pods-JDEther-acknowledgements.plist */,
+				000000000CA0 /* Pods-JDEther-dummy.m */,
+				000000000C60 /* Pods-JDEther-frameworks.sh */,
+				000000000C70 /* Pods-JDEther-resources.sh */,
+				000000000C40 /* Pods-JDEther-umbrella.h */,
+				000000000C10 /* Pods-JDEther.debug.xcconfig */,
+				000000000C00 /* Pods-JDEther.release.xcconfig */,
+			);
+			name = "Pods-JDEther";
+			path = "Target Support Files/Pods-JDEther";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0000000005B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000B00 /* CryptoSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000BA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000C50 /* Pods-JDEther-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		000000000560 /* CryptoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000570 /* Build configuration list for PBXNativeTarget "CryptoSwift" */;
+			buildPhases = (
+				0000000005B0 /* Headers */,
+				0000000005C0 /* Sources */,
+				0000000005D0 /* Frameworks */,
+				0000000005E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoSwift;
+			productName = CryptoSwift;
+			productReference = 0000000005A0 /* CryptoSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000000B50 /* Pods-JDEther */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000B60 /* Build configuration list for PBXNativeTarget "Pods-JDEther" */;
+			buildPhases = (
+				000000000BA0 /* Headers */,
+				000000000BB0 /* Sources */,
+				000000000BC0 /* Frameworks */,
+				000000000BD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000000CD0 /* PBXTargetDependency */,
+			);
+			name = "Pods-JDEther";
+			productName = "Pods-JDEther";
+			productReference = 000000000B90 /* Pods_JDEther.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 000000000030 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 000000000010;
+			productRefGroup = 000000000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000560 /* CryptoSwift */,
+				000000000B50 /* Pods-JDEther */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0000000005E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000BD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0000000005C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000620 /* AEAD.swift in Sources */,
+				000000000630 /* AEADChaCha20Poly1305.swift in Sources */,
+				000000000840 /* AES+Foundation.swift in Sources */,
+				000000000640 /* AES.Cryptors.swift in Sources */,
+				000000000650 /* AES.swift in Sources */,
+				000000000660 /* Array+Extension.swift in Sources */,
+				000000000850 /* Array+Foundation.swift in Sources */,
+				000000000670 /* Authenticator.swift in Sources */,
+				000000000680 /* BatchedCollection.swift in Sources */,
+				000000000690 /* Bit.swift in Sources */,
+				0000000006A0 /* BlockCipher.swift in Sources */,
+				0000000006B0 /* BlockDecryptor.swift in Sources */,
+				0000000006C0 /* BlockEncryptor.swift in Sources */,
+				0000000006D0 /* BlockMode.swift in Sources */,
+				0000000006E0 /* BlockModeOptions.swift in Sources */,
+				000000000860 /* Blowfish+Foundation.swift in Sources */,
+				000000000780 /* Blowfish.swift in Sources */,
+				0000000006F0 /* CBC.swift in Sources */,
+				000000000790 /* CBCMAC.swift in Sources */,
+				000000000700 /* CCM.swift in Sources */,
+				000000000710 /* CFB.swift in Sources */,
+				000000000870 /* ChaCha20+Foundation.swift in Sources */,
+				0000000007A0 /* ChaCha20.swift in Sources */,
+				0000000007B0 /* Checksum.swift in Sources */,
+				0000000007C0 /* Cipher.swift in Sources */,
+				000000000720 /* CipherModeWorker.swift in Sources */,
+				0000000007D0 /* CMAC.swift in Sources */,
+				0000000007E0 /* Collection+Extension.swift in Sources */,
+				0000000007F0 /* CompactMap.swift in Sources */,
+				000000000800 /* Cryptor.swift in Sources */,
+				000000000810 /* Cryptors.swift in Sources */,
+				000000000B40 /* CryptoSwift-dummy.m in Sources */,
+				000000000730 /* CTR.swift in Sources */,
+				000000000880 /* Data+Extension.swift in Sources */,
+				000000000820 /* Digest.swift in Sources */,
+				000000000830 /* DigestType.swift in Sources */,
+				000000000740 /* ECB.swift in Sources */,
+				000000000750 /* GCM.swift in Sources */,
+				0000000008D0 /* Generics.swift in Sources */,
+				0000000008E0 /* HKDF.swift in Sources */,
+				000000000890 /* HMAC+Foundation.swift in Sources */,
+				0000000008F0 /* HMAC.swift in Sources */,
+				000000000900 /* Int+Extension.swift in Sources */,
+				000000000910 /* MD5.swift in Sources */,
+				000000000920 /* NoPadding.swift in Sources */,
+				000000000760 /* OFB.swift in Sources */,
+				000000000930 /* Operators.swift in Sources */,
+				000000000940 /* Padding.swift in Sources */,
+				000000000950 /* PBKDF1.swift in Sources */,
+				000000000960 /* PBKDF2.swift in Sources */,
+				000000000770 /* PCBC.swift in Sources */,
+				000000000970 /* PKCS5.swift in Sources */,
+				000000000980 /* PKCS7.swift in Sources */,
+				000000000990 /* PKCS7Padding.swift in Sources */,
+				0000000009A0 /* Poly1305.swift in Sources */,
+				0000000008A0 /* Rabbit+Foundation.swift in Sources */,
+				0000000009B0 /* Rabbit.swift in Sources */,
+				0000000009C0 /* RandomBytesSequence.swift in Sources */,
+				0000000009D0 /* SecureBytes.swift in Sources */,
+				0000000009E0 /* SHA1.swift in Sources */,
+				0000000009F0 /* SHA2.swift in Sources */,
+				000000000A00 /* SHA3.swift in Sources */,
+				000000000A10 /* StreamDecryptor.swift in Sources */,
+				000000000A20 /* StreamEncryptor.swift in Sources */,
+				000000000A30 /* String+Extension.swift in Sources */,
+				0000000008B0 /* String+FoundationExtension.swift in Sources */,
+				000000000A40 /* UInt128.swift in Sources */,
+				000000000A50 /* UInt16+Extension.swift in Sources */,
+				000000000A60 /* UInt32+Extension.swift in Sources */,
+				000000000A70 /* UInt64+Extension.swift in Sources */,
+				000000000A80 /* UInt8+Extension.swift in Sources */,
+				000000000A90 /* Updatable.swift in Sources */,
+				0000000008C0 /* Utils+Foundation.swift in Sources */,
+				000000000AA0 /* Utils.swift in Sources */,
+				000000000AB0 /* ZeroPadding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000BB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000CB0 /* Pods-JDEther-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000CD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = 000000000560 /* CryptoSwift */;
+			targetProxy = 000000000CC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		000000000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		000000000580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000AD0 /* CryptoSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				PRODUCT_MODULE_NAME = CryptoSwift;
+				PRODUCT_NAME = CryptoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000000590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000AD0 /* CryptoSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				PRODUCT_MODULE_NAME = CryptoSwift;
+				PRODUCT_NAME = CryptoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000000B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000C00 /* Pods-JDEther.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JDEther/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JDEther/Pods-JDEther.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000000B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000C10 /* Pods-JDEther.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JDEther/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JDEther/Pods-JDEther.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000030 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000040 /* Debug */,
+				000000000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000570 /* Build configuration list for PBXNativeTarget "CryptoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000590 /* Debug */,
+				000000000580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000B60 /* Build configuration list for PBXNativeTarget "Pods-JDEther" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000B80 /* Debug */,
+				000000000B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000 /* Project object */;
+}

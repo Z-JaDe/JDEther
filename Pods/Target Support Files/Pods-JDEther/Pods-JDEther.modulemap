@@ -1,0 +1,6 @@
+framework module Pods_JDEther {
+  umbrella header "Pods-JDEther-umbrella.h"
+
+  export *
+  module * { export * }
+}

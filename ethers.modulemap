@@ -1,0 +1,6 @@
+framework module TrezorCrypto {
+  umbrella header "ethers.objc/ethers/ethers.h"
+
+  export *
+  module * { export * }
+}
