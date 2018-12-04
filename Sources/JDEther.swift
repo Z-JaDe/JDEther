@@ -19,7 +19,7 @@ public class JDEther {
     public static func `import`(privateKey: Data) -> Account? {
         return Account(privateKey: privateKey)
     }
-    public static func `import`(keyStore: String, pwd: String, callback: @escaping (Account?,Error?) -> Void) -> Cancellable {
+    public static func `import`(keyStore: String, pwd: String, callback: @escaping (Account?, Error?) -> Void) -> Cancellable {
         return Account.decryptSecretStorageJSON(keyStore, password: pwd, callback: callback)
     }
     // MARK: - 

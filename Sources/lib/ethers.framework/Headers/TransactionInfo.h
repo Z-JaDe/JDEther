@@ -85,8 +85,4 @@
 
 @property (nonatomic, readonly) NSData *data;
 
-@property (nonatomic, readonly) NSInteger isError;
-@property (nonatomic, strong) Address *tokenTo;
-@property (nonatomic, strong) BigNumber *tokenValue;
-
 @end

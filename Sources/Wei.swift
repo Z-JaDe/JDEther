@@ -22,7 +22,7 @@ public struct Wei {
         let value = ValueType(decimalString: "\(intValue)")!
         self.value = value.mul(BigNumber.constantWeiPerEther()!.div(BigNumber(integer: Int(powerN))))
     }
-    
+
     public var formatNumber: ValueType {
         return self.value
     }

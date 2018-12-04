@@ -40,14 +40,12 @@
 #import "Promise.h"
 #import "Transaction.h"
 #import "TransactionInfo.h"
-#import "Erc20Token.h"
 
 
 #pragma mark - Notifictions
 
 extern const NSNotificationName ProviderDidReceiveNewBlockNotification;
 extern const NSNotificationName ProviderEtherPriceChangedNotification;
-extern const NSNotificationName ProviderTokenPriceChangedNotification;
 
 
 #pragma mark - Errors
@@ -115,8 +113,6 @@ NSString *getBlockTag(BlockTag blockTag);
 
 - (BigNumberPromise*)getBalance: (Address*)address;
 - (BigNumberPromise*)getBalance: (Address*)address blockTag: (BlockTag)blockTag;
-
-- (ArrayPromise *)getTokenBalance:(Address *)address;
 
 - (IntegerPromise*)getTransactionCount: (Address*)address;
 - (IntegerPromise*)getTransactionCount: (Address*)address blockTag: (BlockTag)blockTag;

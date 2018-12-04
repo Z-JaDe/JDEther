@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for ethers.
-FOUNDATION_EXPORT double ethersVersionNumber;
-
-//! Project version string for ethers.
-FOUNDATION_EXPORT const unsigned char ethersVersionString[];
-
 #import <ethers/Account.h>
 #import <ethers/Address.h>
 #import <ethers/BlockInfo.h>

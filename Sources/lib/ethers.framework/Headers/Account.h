@@ -102,6 +102,11 @@
 - (Signature*)signDigest: (NSData*)digestData;
 - (void)sign: (Transaction*)transaction;
 
+- (Signature*)signMessage: (NSData*)message;
++ (Address*)verifyMessage: (NSData*)message signature: (Signature*)signature;
+
++ (Signature*)signatureWithMessage: (NSData*)message r: (NSData*)r s: (NSData*)s address: (Address*)address;
+
 + (BOOL)isValidMnemonicPhrase: (NSString*)phrase;
 + (BOOL)isValidMnemonicWord: (NSString*)word;
 
