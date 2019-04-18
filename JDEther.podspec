@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '10.0'
     s.frameworks            = "Foundation"
-    s.swift_version         = "4.2"
+    s.swift_version         = "5.0"
 
     s.default_subspec = "Core"
 
