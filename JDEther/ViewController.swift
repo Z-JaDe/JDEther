@@ -45,10 +45,10 @@ class ViewController: UIViewController {
             transaction.nonce = UInt(hash?.value ?? 0)
 
             provider?.getBalance(transaction.toAddress)?.onCompletion({ (hash) in
-                hash?.error
+                _ = hash?.error
             })
             provider!.sendTransaction(transaction.serialize())!.onCompletion({ (hash) in
-                hash?.value
+                _ = hash?.value
             })
         })
     }
