@@ -18,7 +18,6 @@
 		C91A097C217876D400B13F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91A097A217876D400B13F19 /* Main.storyboard */; };
 		C91A097E217876D600B13F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91A097D217876D600B13F19 /* Assets.xcassets */; };
 		C91A0981217876D600B13F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91A097F217876D600B13F19 /* LaunchScreen.storyboard */; };
-		F6E54149670AD04F207A634C /* Pods_JDEther.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B78D2983C4A67BF2CC20B10 /* Pods_JDEther.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +47,6 @@
 		180A051B22EA956C00AC7D19 /* JDEtherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDEtherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180A051D22EA956C00AC7D19 /* JDEtherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDEtherTests.swift; sourceTree = "<group>"; };
 		180A051F22EA956C00AC7D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3153D96BE03F5AD709D81823 /* Pods-JDEther.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDEther.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDEther/Pods-JDEther.release.xcconfig"; sourceTree = "<group>"; };
-		6B78D2983C4A67BF2CC20B10 /* Pods_JDEther.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDEther.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B12F0F8514B32DAB430140D1 /* Pods-JDEther.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDEther.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDEther/Pods-JDEther.debug.xcconfig"; sourceTree = "<group>"; };
 		C910C26E217EC44300C9F3F5 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		C910C296217F2AFE00C9F3F5 /* JDEther.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JDEther.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C915E81D217DD25E00C7564A /* JDEther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDEther.swift; sourceTree = "<group>"; };
@@ -77,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6E54149670AD04F207A634C /* Pods_JDEther.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,23 +88,6 @@
 			path = JDEtherTests;
 			sourceTree = "<group>";
 		};
-		72BF4C20B2678C1382713D77 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B12F0F8514B32DAB430140D1 /* Pods-JDEther.debug.xcconfig */,
-				3153D96BE03F5AD709D81823 /* Pods-JDEther.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B62B6D1510A40AC4FD5B133C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6B78D2983C4A67BF2CC20B10 /* Pods_JDEther.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C91A096A217876D400B13F19 = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +96,6 @@
 				C91A0975217876D400B13F19 /* JDEther */,
 				180A051C22EA956C00AC7D19 /* JDEtherTests */,
 				C91A0974217876D400B13F19 /* Products */,
-				72BF4C20B2678C1382713D77 /* Pods */,
-				B62B6D1510A40AC4FD5B133C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,11 +157,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C91A0985217876D600B13F19 /* Build configuration list for PBXNativeTarget "JDEther" */;
 			buildPhases = (
-				2653295992F4E153559598C7 /* [CP] Check Pods Manifest.lock */,
 				C91A096F217876D400B13F19 /* Sources */,
 				C91A0970217876D400B13F19 /* Frameworks */,
 				C91A0971217876D400B13F19 /* Resources */,
-				A0FC448CEB636D9433C5B785 /* [CP] Embed Pods Frameworks */,
 				C910C280217F1ED300C9F3F5 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -255,48 +229,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2653295992F4E153559598C7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JDEther-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A0FC448CEB636D9433C5B785 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JDEther/Pods-JDEther-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JDEther/Pods-JDEther-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JDEther/Pods-JDEther-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		180A051722EA956C00AC7D19 /* Sources */ = {
@@ -510,11 +442,10 @@
 		};
 		C91A0986217876D600B13F19 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B12F0F8514B32DAB430140D1 /* Pods-JDEther.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MG2ZSL4NR6;
+				DEVELOPMENT_TEAM = 553C2VE52E;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sources",
@@ -534,11 +465,10 @@
 		};
 		C91A0987217876D600B13F19 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3153D96BE03F5AD709D81823 /* Pods-JDEther.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MG2ZSL4NR6;
+				DEVELOPMENT_TEAM = 553C2VE52E;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sources",
